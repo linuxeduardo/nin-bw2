@@ -1,0 +1,11 @@
+@import 'colors';
+@import 'font';
+
+.message {
+  padding: 2rem;
+  h4 {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: $ss;
+  }
+}

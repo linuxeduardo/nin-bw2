@@ -1,0 +1,101 @@
+$desktop: 1127;
+$tablet: 933;
+$mobile: 723;
+$cols: 12;
+
+.container {
+  max-width: #{$desktop + 'px'};
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.container--fluid {
+  margin: 0;
+  max-width: 100%;
+}
+@mixin clearfix {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin d($size) {
+  @if $size == d {
+    @media screen and (min-width: #{$desktop + 'px'}) {
+      @content;
+    }
+  } @else if $size == t {
+    @media screen and (min-width: #{$tablet + 'px'}) and (max-width: #{$desktop - 1 + 'px'}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: #{$mobile - 1 + 'px'}) and (max-width: #{$tablet - 1 + 'px'}) {
+      @content;
+    }
+  } @else if $size == xs {
+    @media screen and (max-width: #{$mobile - 1 + 'px'}) {
+      @content;
+    }
+  }
+}
+
+@mixin container {
+  max-width: $mobile;
+
+  @include d(t) {
+    max-width: $tablet;
+  }
+  @include d(m) {
+    max-width: $desktop;
+  }
+  @include d(xs) {
+    max-width: $mobile;
+    display: block;
+  }
+  @include clearfix;
+}
+
+@for $i from 1 through $cols {
+  .cols-#{$i} {
+    flex-basis: (100 / ($cols / $i)) * 1%;
+  }
+}
+
+@mixin grid-structure {
+  min-height: 1px;
+  @include d(xs) {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+[class^='cols-'] {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  flex-grow: 1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  @include grid-structure;
+}
+.row {
+  @include clearfix;
+}
+
+// flex
+.flex {
+  display: flex;
+  text-align: center;
+}
+.v-center {
+  justify-content: center;
+}

@@ -1,0 +1,25 @@
+@import 'colors';
+
+.rounded-button,
+.button {
+  padding: 1rem 2rem;
+  transition: 0.2s;
+  font-size: 0.8rem;
+  background-color: #fff;
+  letter-spacing: 0.05rem;
+}
+.rounded-button {
+  border: none;
+  border-radius: 3rem;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+  }
+}
+.button {
+  border: none;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+  }
+}

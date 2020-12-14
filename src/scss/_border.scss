@@ -1,0 +1,12 @@
+$border-radius-1: 3px;
+$border-radius-2: 6px;
+$border-radius-3: 9px;
+.border-1 {
+  border-radius: $border-radius-1;
+}
+.border-2 {
+  border-radius: $border-radius-2;
+}
+.border-3 {
+  border-radius: $border-radius-3;
+}
