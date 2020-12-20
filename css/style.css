@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;700&display=swap");
 html,
 body,
 div,
@@ -135,65 +134,57 @@ table {
   border-spacing: 0;
 }
 
-/* Color Theme Swatches in Hex */
-.white {
-  color: #fff;
+html {
+  font-size: 100%;
 }
 
-.yellow {
-  color: #f4b942;
-}
-
-.green {
-  color: #97d8c4;
-}
-
-.blue {
-  color: #6b9ac4;
-}
-
-.orange {
-  color: #fe5f55;
-}
-
-.purple {
-  color: #6a66a3;
-}
-
-.dark {
+body {
+  background: white;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
   color: #08090d;
 }
 
-.light {
-  color: #efefef;
+p {
+  margin-bottom: 1rem;
 }
 
-.bg-yellow {
-  background-color: #f4b942;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1rem 0 1.38rem;
+  font-family: 'PT Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  line-height: 1.3;
 }
 
-.bg-green {
-  background-color: #97d8c4;
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
 }
 
-.bg-blue {
-  background-color: #6b9ac4;
+h2 {
+  font-size: 3.157rem;
 }
 
-.bg-orange {
-  background-color: #fe5f55;
+h3 {
+  font-size: 2.369rem;
 }
 
-.bg-purple {
-  background-color: #6a66a3;
+h4 {
+  font-size: 1.777rem;
 }
 
-.bg-dark {
-  background-color: #08090d;
+h5 {
+  font-size: 1.333rem;
 }
 
-.bg-light {
-  background-color: #efefef;
+small,
+.text_small {
+  font-size: 0.75rem;
 }
 
 .rounded-button,
@@ -227,7 +218,6 @@ table {
           filter: brightness(120%);
 }
 
-/* Color Theme Swatches in Hex */
 .white {
   color: #fff;
 }
@@ -414,21 +404,6 @@ table {
           justify-content: center;
 }
 
-.square {
-  display: block;
-  width: 100px;
-  height: 100px;
-}
-
-body {
-  margin-bottom: 5rem;
-}
-
-.bg-test {
-  background-color: darkseagreen;
-  outline: 1px solid darkcyan;
-}
-
 .shadow-1 {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -465,120 +440,6 @@ body {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Color Theme Swatches in Hex */
-.white {
-  color: #fff;
-}
-
-.yellow {
-  color: #f4b942;
-}
-
-.green {
-  color: #97d8c4;
-}
-
-.blue {
-  color: #6b9ac4;
-}
-
-.orange {
-  color: #fe5f55;
-}
-
-.purple {
-  color: #6a66a3;
-}
-
-.dark {
-  color: #08090d;
-}
-
-.light {
-  color: #efefef;
-}
-
-.bg-yellow {
-  background-color: #f4b942;
-}
-
-.bg-green {
-  background-color: #97d8c4;
-}
-
-.bg-blue {
-  background-color: #6b9ac4;
-}
-
-.bg-orange {
-  background-color: #fe5f55;
-}
-
-.bg-purple {
-  background-color: #6a66a3;
-}
-
-.bg-dark {
-  background-color: #08090d;
-}
-
-.bg-light {
-  background-color: #efefef;
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  background: white;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.75;
-  color: #08090d;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 1rem 0 1.38rem;
-  font-family: 'PT Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 4.209rem;
-}
-
-h2 {
-  font-size: 3.157rem;
-}
-
-h3 {
-  font-size: 2.369rem;
-}
-
-h4 {
-  font-size: 1.777rem;
-}
-
-h5 {
-  font-size: 1.333rem;
-}
-
-small,
-.text_small {
-  font-size: 0.75rem;
-}
-
 .message {
   padding: 2rem;
 }
@@ -599,59 +460,6 @@ small,
 
 .border-3 {
   border-radius: 9px;
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  background: white;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.75;
-  color: #08090d;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 1rem 0 1.38rem;
-  font-family: 'PT Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 4.209rem;
-}
-
-h2 {
-  font-size: 3.157rem;
-}
-
-h3 {
-  font-size: 2.369rem;
-}
-
-h4 {
-  font-size: 1.777rem;
-}
-
-h5 {
-  font-size: 1.333rem;
-}
-
-small,
-.text_small {
-  font-size: 0.75rem;
 }
 
 .pt-1 {
@@ -1012,5 +820,20 @@ small,
 
 .m-9 {
   margin: 2.25rem;
+}
+
+.square {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  margin-bottom: 5rem;
+}
+
+.bg-test {
+  background-color: darkseagreen;
+  outline: 1px solid darkcyan;
 }
 /*# sourceMappingURL=style.css.map */
